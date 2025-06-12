@@ -1,0 +1,71 @@
+[gd_scene load_steps=2 format=3 uid="uid://ckjmdtlxda2ut"]
+
+[ext_resource type="Texture2D" uid="uid://cy0204v7mjgcx" path="res://Assets/Menu/Main menu.png" id="1_upetw"]
+
+[node name="Main_menu" type="Node2D"]
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+offset_top = 900.0
+offset_right = 1920.0
+offset_bottom = 1050.0
+
+[node name="MainButtons" type="HBoxContainer" parent="CenterContainer"]
+layout_mode = 2
+theme_override_constants/separation = 50
+
+[node name="Play" type="Button" parent="CenterContainer/MainButtons"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 75
+text = "PLAY"
+
+[node name="Settings" type="Button" parent="CenterContainer/MainButtons"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 75
+text = "SETTINGS"
+
+[node name="Quit" type="Button" parent="CenterContainer/MainButtons"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 75
+text = "QUIT"
+
+[node name="Credits" type="Button" parent="CenterContainer/MainButtons"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 75
+text = "CREDITS"
+
+[node name="SettingsMenu" type="HBoxContainer" parent="CenterContainer"]
+visible = false
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="Back" type="Button" parent="CenterContainer/SettingsMenu"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 75
+text = "BACK"
+
+[node name="CreditsMenu" type="HBoxContainer" parent="CenterContainer"]
+visible = false
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="Label" type="Label" parent="CenterContainer/CreditsMenu"]
+custom_minimum_size = Vector2(1000, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 80
+text = "Developed by Odinson"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Back" type="Button" parent="CenterContainer/CreditsMenu"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 75
+text = "BACK"
+
+[node name="Node" type="Node" parent="."]
+
+[node name="Background" type="Sprite2D" parent="Node"]
+z_index = -4096
+position = Vector2(960.648, 544)
+scale = Vector2(0.999325, 1.00741)
+texture = ExtResource("1_upetw")
